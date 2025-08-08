@@ -244,6 +244,7 @@ comfoair:
 api:
   encryption:
     key: !secret comfoair_encryption_key
+  custom_services: true
 
 ota:
   password: !secret comfoair_ota_password
