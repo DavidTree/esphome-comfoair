@@ -276,6 +276,10 @@ public:
 
 
   void set_name(const char* value) {name = value;}
+  void set_name(const char* value, uint32_t name_hash) {
+    (void) name_hash;
+    name = value;
+  }
   void set_uart_component(uart::UARTComponent* parent) {set_uart_parent(parent);}
   void set_proxy_uart_component(uart::UARTComponent* proxy) {uart_proxy_.set_uart_parent(proxy);}
   void set_red_led_component(switch_::Switch* red_led) {red_led_ = red_led;}
